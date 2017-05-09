@@ -1,0 +1,11 @@
+@Html.Partial("Navbar-User")
+<div class="EditContainer">
+@{
+    if (@ViewBag.User.AccessLevel == "Admin") {
+        @Html.Partial("EditUser-Admin")
+    }
+    else {
+        @Html.Partial("EditUser-Normal")
+    }
+}
+</div>

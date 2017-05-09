@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+  </head>
+  <body>
+    @Html.Partial("Navbar-Index")
+    <div class="login-container">
+        <div class="login">
+            <h3 class="logreg-title">Login</h3>
+            <form action="login_user" method="post">
+                <h4 class="form-titles">Email: </h4><input class="form-control" type="text" name="Email">
+                <h4 class="form-titles">Password: </h4><input class="form-control" type="password" name="Password"><br>
+                <input class="btn btn-info login-btn btn-block" type="submit" value="Login"><br>
+            </form>
+        </div>
+        <div class="errors">
+            @{
+                if (ViewBag.Errors != null) {
+                    foreach(var error in ViewBag.Errors) {
+                        <p class="alert alert-warning">@error</p>
+                    }
+                }
+            }
+        </div>        
+        <a href="register"><button class="btn btn-default btn-s btn-block">Need to register?</button></button></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@Html.Partial("Navbar-User")
+
+
+<div class="register-container">
+    <h1>Add a New User</h1>
+    <div class="AddUser">
+        <form action="/AddUser" method="post">
+            <h5 class="form-titles">First Name: </h5><input class="form-control" type="text" name="FirstName">
+            <h5 class="form-titles">Last Name: </h5><input class="form-control" type="text" name="LastName">
+            <h5 class="form-titles">Email: </h5><input class="form-control" type="text" name="Email">
+            <h5 class="form-titles">Password: </h5><input class="form-control" type="password" name="Password">
+            <h5 class="form-titles">Confirm Password: </h5><input class="form-control" type="password" name="PasswordC"><br>
+            <input class="btn btn-success login-btn btn-block" type="submit" value="Create User"><br>
+        </form>
+    </div>
+    <div class="errors">
+        @{
+            if (ViewBag.Errors != null) {
+                foreach(var error in ViewBag.Errors) {
+                    <p class="alert alert-warning">@error</p>
+                }
+            }
+            if (ViewBag.Success != null) {
+                <p class="alert alert-success">@ViewBag.Scuccess</p>
+            }
+        }
+    
+    </div>
+</div>

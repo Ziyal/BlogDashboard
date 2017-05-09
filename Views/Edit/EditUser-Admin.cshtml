@@ -1,0 +1,26 @@
+<h1>Edit User #@ViewBag.EditUser.UserId: @ViewBag.EditUser.FirstName @ViewBag.EditUser.LastName</h1>
+
+    <div class="EditInfo">
+        <h3 class="update-title"><u>Edit Information</u></h3>
+        <form action="/UpdateUserA/@ViewBag.EditUser.UserId" method="post">
+            <label class="form-titles">Email: </label><input class="form-control" type="text" name="Email" value="@ViewBag.EditUser.Email">
+            <label class="form-titles">First Name: </label><input class="form-control" type="text" name="FirstName" value="@ViewBag.EditUser.FirstName">
+            <label class="form-titles">Last Name: </label><input class="form-control" type="text" name="LastName" value="@ViewBag.EditUser.LastName">
+            <label class="form-titles">Access Level: </label>
+            <select name="AccessLevel" class="form-control">
+                <option value="Normal" name="AccessLevel">Normal</option>
+                <option value="Admin" name="AccessLevel">Admin</option>
+            </select><br>
+            <input class="btn btn-success login-btn btn-block" type="submit" value="Save"><br>
+        </form>
+    </div>
+    <h4>@ViewBag.Errors</h1>
+    <h4>@ViewBag.Success</h1>
+    <div class="ChangePassword">
+        <h3 class="update-title"><u>Change Password</u></h3>
+        <form action="/UpdatePasswordA/@ViewBag.User.UserId" method="post">
+            <label class="form-titles">Password: </label><input class="form-control" type="password" name="Password">
+            <label class="form-titles">Password Confirm: </label><input class="form-control" type="password" name="PasswordC"><br>
+            <input class="btn btn-success login-btn btn-block" type="submit" value="Update Password">
+        </form>
+    </div>

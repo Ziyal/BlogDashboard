@@ -1,0 +1,51 @@
+@Html.Partial("Navbar-User")
+
+    <div class="blog-container">
+        <h1 class="title">@ViewBag.Linked.FirstName @ViewBag.Linked.LastName's Blog</h1>
+        <hr>
+
+      @{
+        if (@ViewBag.User.UserId == @ViewBag.Linked.UserId) {
+          @Html.Partial("PostForm")
+        }
+      }
+
+        @{
+          foreach (var post in ViewBag.UsersPosts) {
+            <div class="post-whole">
+              <h3>@post.Title</h3>
+              <p>@post.Content</p>
+              <i><p>Written by @post.User.FirstName on @post.CreatedAt.ToString("MMMM hhhh, yyyy")</p></i>
+              <hr class="comment-hr">
+              <div class="comment-whole">
+              @{
+                if (@post.Comments.Count > 0) {
+                  foreach (var comment in @post.Comments) {
+
+                  
+                    DateTime date = @comment.CreatedAt;
+                    TimeAgo DateVal = new TimeAgo() {
+                      Date = date
+                    };
+                    string ReturnTime = DateVal.TimeSince();
+                      
+                  <b><p><a href="/blog/@comment.User.UserId">@comment.User.FirstName @comment.User.LastName</a> commented @ReturnTime:</p></b>
+                  <p>@comment.Content</p>
+                  }
+                }
+              }
+
+
+                  <form action="/AddComment/@post.PostId" method="post">
+                    <textarea name="Content" class="form-control comment-text" rows="4" placeholder="And what you do you have to say about that?"></textarea><br>
+                    <input class="btn btn-info login-btn" type="submit" value="Add Comment">
+                  </form>
+              </div>
+              <hr>           
+            </div>
+          }
+        }
+    </div>
+
+
+
