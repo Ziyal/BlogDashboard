@@ -2,7 +2,7 @@
 
     <div class="blog-container">
         <h1 class="title">@ViewBag.Linked.FirstName @ViewBag.Linked.LastName's Blog</h1>
-        <hr>
+        <hr class="update-hr">
 
       @{
         if (@ViewBag.User.UserId == @ViewBag.Linked.UserId) {
@@ -35,10 +35,10 @@
                 }
               }
 
-
+                  <br>
                   <form action="/AddComment/@post.PostId" method="post">
-                    <textarea name="Content" class="form-control comment-text" rows="4" placeholder="And what you do you have to say about that?"></textarea><br>
-                    <input class="btn btn-info login-btn" type="submit" value="Add Comment">
+                    <textarea name="Content" class="form-control comment-text" rows="4" placeholder="And what you do you have to say about that?"></textarea>
+                    <input class="btn btn-info login-btn btn-block" type="submit" value="Add Comment">
                   </form>
               </div>
               <hr>           

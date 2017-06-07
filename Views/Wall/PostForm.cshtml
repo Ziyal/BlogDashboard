@@ -1,6 +1,5 @@
-<h3>Write a Post</h3>
-    <form action="/AddPost/@ViewBag.User.UserId" method="post">
-    <label class="Form-titles">Title: </label><input type="text" name="Title" class="form-control" placeholder="Epic title goes here">
-    <label class="Form-titles">Content: </label><textarea name="Content" class="form-control" rows="5" placeholder="Share your awesome-ness with the world..."></textarea><br>
+<form action="/AddPost/@ViewBag.User.UserId" method="post">
+    <label class="form-titles">Title: </label><input type="text" name="Title" class="form-control" placeholder="Epic title goes here">
+    <label class="form-titles">Content: </label><textarea name="Content" class="form-control" rows="5" placeholder="Share your awesome-ness with the world..."></textarea>
     <input class="btn btn-info login-btn btn-block" type="submit" value="Create Post">
 </form>  

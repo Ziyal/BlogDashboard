@@ -1,5 +1,7 @@
+
 <div class="EditInfo">
     <h3 class="update-title">Edit Information</h3>
+    <hr class="update-hr">
     <form action="/UpdateUser/@ViewBag.User.UserId" method="post">
         <label class="form-titles">Email: </label><input class="form-control" type="text" name="Email" value="@ViewBag.User.Email">
         <label class="form-titles">First Name: </label><input class="form-control" type="text" name="FirstName" value="@ViewBag.User.FirstName">
@@ -7,10 +9,9 @@
         <input class="btn btn-success login-btn btn-block" type="submit" value="Save"><br>
     </form>
 </div>
-<h4>@ViewBag.Errors</h1>
-<h4>@ViewBag.Success</h1>
 <div class="ChangePassword">
     <h3 class="update-title">Change Password</h3>
+    <hr class="update-hr">
     <form action="/UpdatePassword/@ViewBag.User.UserId" method="post">
         <label class="form-titles">Password: </label><input class="form-control" type="password" name="Password">
         <label class="form-titles">Password Confirm: </label><input class="form-control" type="password" name="PasswordC"><br>
@@ -20,8 +21,12 @@
 
 <div class="EditDescription">
     <h3 class="update-title">Edit Information</h3>
+    <hr class="update-hr">
     <form action="/UpdateDescription/@ViewBag.User.UserId" method="post">
         <label class="form-titles">Edit Description: </label><textarea name="Description" class="form-control" rows="5" placeholder="Tell us about yourself..."></textarea><br>
         <input class="btn btn-success login-btn btn-block" type="submit" value="Save">
     </form>
 </div>
+
+<h4>@ViewBag.Errors</h1>
+<h4>@ViewBag.Success</h1>

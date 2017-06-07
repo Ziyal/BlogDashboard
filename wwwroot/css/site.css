@@ -6,14 +6,63 @@
     height: 300px;
 }*/
 
+body {
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Milonga', cursive;
+}
+
 #bg {
-  background: transparent url("~/image/lavender.jpg") no-repeat top center fixed;
+  background: transparent url("images/lavender.jpg") no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 100%;
   height: 300px;
 }
+
+.lavender {
+    display: block;
+    margin: 0 auto;
+    margin
+}
+
+.row {
+    display: block;
+}
+
+.row1 {
+    height: 370px;
+}
+
+.row2 {
+    display: block;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.row-title {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+
+.row-body {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* LOGIN AND REGISTER */
 
 .login-container {
     width:300px;
@@ -38,7 +87,6 @@
 }
 
 /*BLOG*/
-
 .blog-container {
     width: 70%;
     display: block;
@@ -54,10 +102,6 @@
     margin-left: 30px;
 }
 
-/*.comment-text {
-    text-indent: 100px;
-}*/
-
 .comment-hr {
     width: 50%;
 }
@@ -67,23 +111,41 @@
 .EditContainer {
     display: block;
     margin: 0 auto;
+    text-align: center;
+    /*width: 800px;*/
 }
 
-
 .EditInfo {
-    display: inline-block;cd 
-    width: 200px;
+    width: 250px;
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+    vertical-align: top;
+
 }
 
 .ChangePassword {
-    width: 200px;
+    width: 250px;
     display: inline-block;
-
+    padding: 15px;
+    vertical-align: top;
+    margin: 15px;
 }
 
 .EditDescription {
+    width: 250px;
     display: inline-block;
+    padding: 15px;
+    vertical-align: top;
+    margin: 15px;
+}
 
+.update-title {
+    text-align: center;
+}
+
+.update-hr {
+    margin: 5px 0px 0px 0px;
 }
 
 .form-titles {

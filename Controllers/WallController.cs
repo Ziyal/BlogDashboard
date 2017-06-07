@@ -27,7 +27,7 @@ namespace UserDashboard.Controllers
 
             ViewBag.Linked = _context.Users.SingleOrDefault(person => person.UserId == id);
 
-            List<Post> AllPosts = _context.Posts.Where(post => post.UserId == id).Include(u => u.User).Include(p => p.Comments).ThenInclude(comment => comment.User).ToList();
+            List<Post> AllPosts = _context.Posts.Where(post => post.UserId == id).Include(u => u.User).Include(p => p.Comments).ThenInclude(comment => comment.User).OrderByDescending(post => post.CreatedAt).ToList();
             ViewBag.UsersPosts = AllPosts;
 
             System.Console.WriteLine(AllPosts);
