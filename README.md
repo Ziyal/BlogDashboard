@@ -19,5 +19,5 @@ __Built With:__
 ![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/userdashboardA3.png "Blog Dashboard")
 
 # Normal Access
-![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/usergdashboardN1.png "Blog Dashboard")
+![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/userdashboardN1.png "Blog Dashboard")
 ![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/userdashboardN2.png "Blog Dashboard")
