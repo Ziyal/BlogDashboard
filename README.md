@@ -9,15 +9,15 @@ __Built With:__
   * Bootstrap
   * HTML/CSS
 
-![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/Blogdashboard1.png "User Dashboard")
+![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/userdashboard1.png "User Dashboard")
 ![User Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/userdashboard2.png "User Dashboard")
 ![User Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/userdashboard3.png "User Dashboard")
 
 # Admin Access
 ![User Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/userdashboardA1.png "User Dashboard")
-![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/BlogdashboardA2.png "Blog Dashboard")
-![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/BlogdashboardA3.png "Blog Dashboard")
+![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/userdashboardA2.png "Blog Dashboard")
+![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/userdashboardA3.png "Blog Dashboard")
 
 # Normal Access
-![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/BlogdashboardN1.png "Blog Dashboard")
-![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/BlogdashboardN2.png "Blog Dashboard")
+![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/usergdashboardN1.png "Blog Dashboard")
+![Blog Dashboard](https://github.com/Ziyal/BlogDashboard/blob/master/screenshots/userdashboardN2.png "Blog Dashboard")
